@@ -1,12 +1,12 @@
-name: Vanilla Desktop
+name: RusLand Desktop
 id: desktop
 
 stages:
 - id: build
-  base: ghcr.io/vanilla-os/core:dev
+  base: ghcr.io/rlc-linux/core:dev
   singlelayer: false
   labels:
-    maintainer: Vanilla OS Contributors
+    maintainer: Ruslan Artemev
   args:
     DEBIAN_FRONTEND: noninteractive
   runs:
